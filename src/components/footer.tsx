@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <div>
-        <footer className="body-font bg-gray-800 text-white w-full z-50">
+        <footer className="body-font bg-gray-800 text-white w-full z-50 relative bottom-0">
   <div className="px-5 py-8 flex sm:flex-row flex-col">
     <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" viewBox="0 0 24 24">

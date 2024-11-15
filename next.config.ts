@@ -1,7 +1,20 @@
-import type { NextConfig } from "next";
+// next.config.ts
+import createNextIntlPlugin from 'next-intl/plugin';
+ 
+const withNextIntl = createNextIntlPlugin();
+
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  reactStrictMode: true,
+  images: {
+    domains: [
+      '127.0.0.1',      // Localhost
+      'localhost',      // Localhost
+      '192.168.103.173',  // Sizning IP manzilingiz
+      // Boshqa domenlar, agar kerak bo'lsa, shu yerga qo'shing
+    ],
+  },
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

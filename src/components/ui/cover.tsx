@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect, useId, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRef } from "react";
@@ -13,17 +14,15 @@ export const Cover = ({
   className?: string;
 }) => {
   const [hovered, setHovered] = useState(false);
-
   const ref = useRef<HTMLDivElement>(null);
-
   const [containerWidth, setContainerWidth] = useState(0);
   const [beamPositions, setBeamPositions] = useState<number[]>([]);
 
   useEffect(() => {
     if (ref.current) {
-      setContainerWidth(ref.current?.clientWidth ?? 0);
+      setContainerWidth(ref.current.clientWidth);
 
-      const height = ref.current?.clientHeight ?? 0;
+      const height = ref.current.clientHeight;
       const numberOfBeams = Math.floor(height / 10); // Adjust the divisor to control the spacing
       const positions = Array.from(
         { length: numberOfBeams },
@@ -31,14 +30,14 @@ export const Cover = ({
       );
       setBeamPositions(positions);
     }
-  }, [ref.current]);
+  }, []); // Only run once on mount
 
   return (
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       ref={ref}
-      className="relative hover:bg-neutral-900  group/cover inline-block dark:bg-neutral-900 bg-neutral-100 px-2 py-2  transition duration-200 rounded-sm"
+      className="relative hover:bg-neutral-900 group/cover inline-block dark:bg-neutral-900 bg-neutral-300 px-2 py-2 transition duration-200 rounded-sm"
     >
       <AnimatePresence>
         {hovered && (
@@ -163,16 +162,16 @@ export const Beam = ({
 
   return (
     <motion.svg
-      width={width ?? "600"}
+      width={width}
       height="1"
-      viewBox={`0 0 ${width ?? "600"} 1`}
+      viewBox={`0 0 ${width} 1`}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={cn("absolute inset-x-0 w-full", className)}
       {...svgProps}
     >
       <motion.path
-        d={`M0 0.5H${width ?? "600"}`}
+        d={`M0 0.5H${width}`}
         stroke={`url(#svgGradient-${id})`}
       />
 
@@ -211,8 +210,7 @@ export const Beam = ({
 };
 
 export const CircleIcon = ({
-  className,
-  delay,
+  className
 }: {
   className?: string;
   delay?: number;

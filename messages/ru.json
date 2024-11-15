@@ -1,0 +1,30 @@
+{
+    "LanguageButton": {
+      "changeLanguage": "Русский",
+      "uzbek": "Узбек",
+      "russian": "Рус"
+    },
+    "Home":{
+        "logo": "Библиотека",
+        "search": "Поиск...",
+        "category": "Категории"
+        
+    },
+    "Navbar": {
+      "center": "Центр",
+      "e-data": "Электронные документы",
+      "administration": "Администрация",
+      "about": "О центре",
+      "faq": "ЧЗВ",
+      "guide": "Руководство",
+      "events": "Мероприятия",
+      "book": "Книга",
+      "article": "Статья",
+      "dissertation": "Диссертация",
+      "manuscript": "Стихотворение",
+      "international": "Международные электронные документы",
+      "contact": "Контакты",
+      "enter": "Войти"
+    }
+  }
+  

@@ -1,0 +1,30 @@
+{
+    "LanguageButton": {
+      "changeLanguage": "O‘zbek",
+      "uzbek": "O‘zbek",
+      "russian": "Rus"
+    },
+    "Home": {
+        "logo": "Ilmiy-axborot bazasi",
+        "search": "Qidiruv...",
+        "category": "Kategoriyalar"
+        
+    },
+    "Navbar" : {
+      "center": "Markaz",
+      "e-data": "Elektron manbalar",
+      "administration": "Ma'muriyat",
+      "about": "Markaz haqida",
+      "faq": "FAQ",
+      "guide": "Yo'riqnoma",
+      "events": "Tadbirlar",
+      "book": "Kitob",
+      "article": "Maqola",
+      "dissertation": "Dissertatsiya",
+      "manuscript": "Qo'lyozma",
+      "international": "Xalqaro ilmiy manbalar",
+      "contact": "Aloqa",
+      "enter": "Kirish"
+    }
+  }
+  
