@@ -21,3 +21,13 @@ export interface Login {
     email: string;
     password: string;
 }
+
+export interface Administration {
+    id: number;
+    full_name: string;
+    position: string;
+    bio: string;
+    phone_number: string;
+    profile_image: string;
+    admission_day: string;
+}
