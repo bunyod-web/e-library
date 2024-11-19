@@ -6,6 +6,7 @@ export interface FAQ {
 
 export interface AboutUs {
     id: number;
+    title: string;
     about: string;
 }
 export interface News {
@@ -15,4 +16,8 @@ export interface News {
     content: string;
     news_video: string;
     created_at: string;
+}
+export interface Login {
+    email: string;
+    password: string;
 }

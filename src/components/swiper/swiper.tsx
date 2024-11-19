@@ -3,27 +3,34 @@ import React, { useState, useEffect } from "react";
 import { HiPlay } from "react-icons/hi";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useLocale } from "next-intl";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
 import "./swiper.css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import instance from "@/config/api";
+import { fetchData } from "@/config/api";
 import { News } from "@/interfaces/index";
 
 export default function Swipe() {
   const [isPlay, setIsPlay] = useState<boolean>(false);
   const [data, setData] = useState<News[]>();
   const [currentVideo, setCurrentVideo] = useState<number>(0);
+  const locale = useLocale(); // Joriy tilni olish
 
   useEffect(() => {
-    const fetchData = async () => {
-      const response = await instance.get("news/");
-      setData(response.data);
+    const loadData = async () => {
+      try {
+        const result = await fetchData(locale, '/news/'); // Locale ni API ga yuborish
+        setData(result);
+      } catch (error) {
+        console.error('Ma’lumotni yuklashda xatolik:', error);
+      }
     };
-    fetchData();
-  }, []);
+
+    loadData();
+  }, [locale]);
 
   console.log(data);
   return (

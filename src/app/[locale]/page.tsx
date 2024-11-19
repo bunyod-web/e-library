@@ -100,7 +100,7 @@ export default function Home() {
           placeholder={t('search')}
         />
       </div>
-      <div className="w-full h-[350px]">
+      <div className="w-full h-[350px] mx-10">
         <Swipe />
       </div>
       <h1 className="max-w-max mx-auto px-6 font-bold text-4xl border-gray-800 transition-all duration-700 cursor-pointer hover:text-white mt-14">
