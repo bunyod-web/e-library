@@ -12,7 +12,7 @@ import "./swiper.css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { fetchData } from "@/config/api";
 import { News } from "@/interfaces/index";
-
+import Link from "next/link";
 export default function Swipe() {
   const [isPlay, setIsPlay] = useState<boolean>(false);
   const [data, setData] = useState<News[]>();
@@ -55,7 +55,7 @@ export default function Swipe() {
                 <div className=" w-full h-full relative">
                   <iframe
                     width="620"
-                    height="350"
+                    height="326"
                     src={item.news_video}
                     title="YouTube video player"
                     frameBorder="0"
@@ -69,6 +69,7 @@ export default function Swipe() {
                 <div
                   className=" w-full h-full relative cursor-pointer items-center flex justify-center rounded-xl" 
                 >
+                  
                    <button className="absolute z-50"
                     onClick={() => {
                     setCurrentVideo(item.id);
@@ -76,15 +77,16 @@ export default function Swipe() {
                   }}>
                     <HiPlay size={60} />
                   </button>
+                  <Link href={`/news/${item.id}/`}>
                   <Image
                     src={item.image}
                     alt="Image description"
                     width={800}
-                    height={450}
+                    height={470}
                     layout="intrinsic" 
                     className="cover h-full w-full rounded-xl"// O'lchamlarni avtomatik sozlash
                   />
-
+                  </Link>
                  
                 </div>
               )}

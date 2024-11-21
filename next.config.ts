@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
     domains: [
       '127.0.0.1',      // Localhost
       'localhost',      // Localhost
-      '192.168.161.173',  // Sizning IP manzilingiz
+      '127.0.0.1:8000/api/v1/',  // Sizning IP manzilingiz
       // Boshqa domenlar, agar kerak bo'lsa, shu yerga qo'shing
     ],
   },

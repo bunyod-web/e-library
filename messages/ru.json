@@ -25,6 +25,19 @@
       "international": "Международные электронные документы",
       "contact": "Контакты",
       "enter": "Войти"
+    },
+    "Leader-Ship": {
+      "full_name": "ФИО",
+      "position": "Лидерство",
+      "phone": "Телефонный номер",
+      "admission_day" : "День приема"
+    },
+    "Event": {
+      "title": "Название",
+      "duration": "Продолжительность",
+      "event_reason": "Причины мероприятия",
+      "address": "Адрес",
+      "speaker": "Спикер"
     }
   }
   

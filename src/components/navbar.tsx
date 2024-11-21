@@ -27,10 +27,10 @@ function Navbar() {
                       <div>
                         <ul className="mt-3 text-[15px]">
                           <li>
-                            <a href="#"
+                            <Link href={'administration'}
                               className="block p-2 text-xl -mx-2 rounded-lg hover:text-2xl hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition-all ease-in-out duration-100 text-blue-600 font-semibold hover:text-indigo-600">
                               {t("administration")}
-                            </a>
+                            </Link>
                           </li>
                           <li>
                             <Link href={"about"}

@@ -28,11 +28,11 @@ function About() {
           key={item.id}
           className="w-full h-full bg-gray-800 rounded-2xl flex flex-col gap-2 p-10 duration-700 hover:scale-105 hover:drop-shadow-xl hover:shadow-blue-600 hover:border-blue-600"
         >
-          <div className="flex gap-2 items-center">
+          <div className="flex gap-2 items-center text-white">
             <FiCheckCircle size={30} className="text-blue-600 font-bold" />
             <span className="font-bold text-2xl">{item.title}</span>
           </div>
-          <div>
+          <div className="text-white">
             {item.about}
           </div>
         </div>

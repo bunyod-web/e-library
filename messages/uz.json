@@ -25,6 +25,19 @@
       "international": "Xalqaro ilmiy manbalar",
       "contact": "Aloqa",
       "enter": "Kirish"
+    },
+    "Leader-Ship" : {
+      "full_name": "FISH",
+      "position": "Lavozimi",
+      "phone": "Telefon raqami",
+      "admission_day" : "Qabul kuni"  
+    },
+    "Events" : {
+      "title": "Nomi",
+      "duration": "Davomiyligi",
+      "event_reason": "Tadbir sababi",
+      "address": "Manzil",
+      "speaker": "Boshlovchi"
     }
   }
   

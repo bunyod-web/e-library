@@ -31,3 +31,12 @@ export interface Administration {
     profile_image: string;
     admission_day: string;
 }
+export interface Event {
+    id: number;
+    title: string;
+    duration: string;
+    image: string;
+    event_reason: string;
+    address: string;
+    speaker: string;
+}
