@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://192.168.161.173:8000/api/v1/';
+const API_URL = 'http://127.0.0.1:8000/api/v1/';
 
 export async function fetchUser() {
   const token = localStorage.getItem('access'); // Tokenni olish
@@ -10,7 +10,7 @@ export async function fetchUser() {
   }
 
   try {
-    const response = await axios.get(`${API_URL}/user/`, { // So‘rovni tekshirib ko‘ring
+    const response = await axios.get(`${API_URL}/users/`, { // So‘rovni tekshirib ko‘ring
       headers: {
         Authorization: `Bearer ${token}`, // To‘g‘ri token yuborish
       },

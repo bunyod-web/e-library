@@ -24,7 +24,8 @@
       "manuscript": "Стихотворение",
       "international": "Международные электронные документы",
       "contact": "Контакты",
-      "enter": "Войти"
+      "enter": "Войти",
+      "exit": "Выйти"
     },
     "Leader-Ship": {
       "full_name": "ФИО",

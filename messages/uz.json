@@ -24,7 +24,8 @@
       "manuscript": "Qo'lyozma",
       "international": "Xalqaro ilmiy manbalar",
       "contact": "Aloqa",
-      "enter": "Kirish"
+      "enter": "Kirish",
+      "exit": "Chiqish"
     },
     "Leader-Ship" : {
       "full_name": "FISH",
@@ -32,7 +33,7 @@
       "phone": "Telefon raqami",
       "admission_day" : "Qabul kuni"  
     },
-    "Events" : {
+    "Event" : {
       "title": "Nomi",
       "duration": "Davomiyligi",
       "event_reason": "Tadbir sababi",

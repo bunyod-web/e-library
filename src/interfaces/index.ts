@@ -40,3 +40,23 @@ export interface Event {
     address: string;
     speaker: string;
 }
+export interface Books {
+    id: number;
+    title: string;
+    author: string;
+    thumbnail: string;
+    institution_name: string;
+    keywords: string;
+    publication_city: string;
+    publication_year: string;
+    description: string;
+    content_type: string;
+    degree: string;
+    issn_isbn: string;
+    file: string;
+    created_at: string;
+    updates_at: string;
+    average_rating: number;
+    user: number;
+    category: number;
+}

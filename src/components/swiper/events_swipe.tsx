@@ -48,7 +48,7 @@ export default function EventsSwipe() {
       >
         {data?.map((item) => (
           <SwiperSlide key={item.id} className="relative rounded-3xl">
-            <Link href={`/events/${item.id}/`}>
+            <Link href={`/event/${item.id}/`}>
             <div className="group box-border relative cursor-pointer">
 
                 <div

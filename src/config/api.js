@@ -1,8 +1,22 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'http://127.0.0.1:8000/api/v1', // API manzilingizni kiriting
+  baseURL: 'http://127.0.0.1:8000/api/v1/', // API manzilingizni kiriting
 });
+
+
+instance.interceptors.request.use(
+  (config) => {
+      const token = localStorage.getItem('access_token'); // Tokenni olish
+      if (token) {
+          config.headers.Authorization = `Bearer ${token}`; // Tokenni qo'shish
+      }
+      return config;
+  },
+  (error) => {
+      return Promise.reject(error);
+  }
+);
 
 export const fetchData = async (locale, endpoint) => {
   try {
@@ -18,4 +32,7 @@ export const fetchData = async (locale, endpoint) => {
     throw error;
   }
 };
+
+
+
 export default instance
