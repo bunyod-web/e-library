@@ -54,7 +54,7 @@ export default function Swipe() {
               {item.id === currentVideo && isPlay === true ? (
                 <div className=" w-full h-full relative">
                   <iframe
-                    width="620"
+                    width="570"
                     height="326"
                     src={item.news_video}
                     title="YouTube video player"

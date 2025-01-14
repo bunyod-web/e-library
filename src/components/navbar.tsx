@@ -41,19 +41,19 @@ function Navbar() {
                       <div>
                         <ul className="mt-3 text-[15px]">
                           <li>
-                            <Link href={'administration'}
+                            <Link href='/administration'
                               className="block p-2 text-xl -mx-2 rounded-lg hover:text-2xl hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition-all ease-in-out duration-100 text-blue-600 font-semibold hover:text-indigo-600">
                               {t("administration")}
                             </Link>
                           </li>
                           <li>
-                            <Link href={"about"}
+                            <Link href="/about"
                               className="block p-2 -mx-2 text-xl rounded-lg hover:text-2xl hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition-all ease-in-out duration-300 text-blue-600 font-semibold hover:text-indigo-600">
                               {t("about")}
                             </Link>
                           </li>
                           <li>
-                            <Link href={'faq'}
+                            <Link href='/faq'
                               className="block p-2 -mx-2 text-xl text-blue-600 hover:text-2xl rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition-all ease-in-out duration-300 font-semibold hover:text-indigo-600">
                               {t("faq")}
                             </Link>
@@ -63,13 +63,13 @@ function Navbar() {
                       <div>
                         <ul className="mt-3 text-[15px]">
                           <li>
-                            <a href="#"
+                            <Link href="#"
                               className="block p-2 hover:text-2xl -mx-2 text-xl rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition-all ease-in-out duration-300 text-blue-600 font-semibold hover:text-indigo-600">
                               {t('guide')}
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <Link href={'events'}
+                            <Link href='/events'
                               className="block p-2 -mx-2 text-xl text-blue-600 hover:text-2xl rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition-all ease-in-out duration-300 font-semibold hover:text-indigo-600">
                               {t('events')}
                             </Link>
@@ -95,21 +95,27 @@ function Navbar() {
                       <div>
                         <ul className="mt-3 text-[15px]">
                           <li>
-                            <Link href={'books'}
+                            <Link href='/textbooks'
                               className="block p-2 text-xl -mx-2 rounded-lg hover:text-2xl hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition-all ease-in-out duration-100 text-blue-600 font-semibold hover:text-indigo-600">
-                              {t("book")}
+                              Darsliklar
                             </Link>
                           </li>
                           <li>
-                            <Link href={"about"}
+                            <Link href="/about"
                               className="block p-2 -mx-2 text-xl rounded-lg hover:text-2xl hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition-all ease-in-out duration-300 text-blue-600 font-semibold hover:text-indigo-600">
-                              {t("article")}
+                              Hisobotlar
                             </Link>
                           </li>
                           <li>
-                            <Link href={'faq'}
+                            <Link href='/faq'
                               className="block p-2 -mx-2 text-xl text-blue-600 hover:text-2xl rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition-all ease-in-out duration-300 font-semibold hover:text-indigo-600">
-                              {t("dissertation")}
+                              Dissertatsiyalar
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href='/events'
+                              className="block p-2 -mx-2 text-xl text-blue-600 hover:text-2xl rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition-all ease-in-out duration-300 font-semibold hover:text-indigo-600">
+                              Sharhlar
                             </Link>
                           </li>
                         </ul>
@@ -117,15 +123,27 @@ function Navbar() {
                       <div>
                         <ul className="mt-3 text-[15px]">
                           <li>
-                            <a href="#"
+                            <Link href="#"
                               className="block p-2 hover:text-2xl -mx-2 text-xl rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition-all ease-in-out duration-300 text-blue-600 font-semibold hover:text-indigo-600">
-                              {t('manuscript')}
-                            </a>
+                              Jurnallar
+                            </Link>
                           </li>
                           <li>
-                            <Link href={'events'}
+                            <Link href='/events'
                               className="block p-2 -mx-2 text-xl text-blue-600 hover:text-2xl rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition-all ease-in-out duration-300 font-semibold hover:text-indigo-600">
-                              {t('international')}
+                              Loyihalar
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href='/events'
+                              className="block p-2 -mx-2 text-xl text-blue-600 hover:text-2xl rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition-all ease-in-out duration-300 font-semibold hover:text-indigo-600">
+                              Monografiyalar
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href='/events'
+                              className="block p-2 -mx-2 text-xl text-blue-600 hover:text-2xl rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition-all ease-in-out duration-300 font-semibold hover:text-indigo-600">
+                              Risolalar
                             </Link>
                           </li>
                         </ul>
@@ -136,9 +154,10 @@ function Navbar() {
               </div>
             </li>
             <li className="relative group px-3 py-2">
-              <Link href={"contact"} className="hover:opacity-50 text-gray-300">{t("contact")}</Link>
+              <Link href="/contact" className="hover:opacity-50 text-gray-300">
+                {t("contact")}
+              </Link>
             </li>
-           
           </ul>
         </nav>
         <nav>

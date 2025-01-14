@@ -39,6 +39,9 @@
       "event_reason": "Tadbir sababi",
       "address": "Manzil",
       "speaker": "Boshlovchi"
+    },
+    "Card" : {
+      "author": "Yozuvchi"
     }
   }
   

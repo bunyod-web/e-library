@@ -15,7 +15,7 @@ const locale = useLocale();
     if (params.id) {
       const loadNews = async () => {
         try {
-          const result = await fetchData(locale, `/event/${params.id}/`);
+          const result = await fetchData(locale, `/book/${params.id}/`);
           setNewsItem(result);
         } catch (error) {
           console.error("Xatolik:", error);
